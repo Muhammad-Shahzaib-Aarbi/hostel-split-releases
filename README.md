@@ -4,20 +4,20 @@
 
 ---
 
-## 🚀 Latest Release: **v1.4.44 (Build 47)**
+## 🚀 Latest Release: **v1.4.45 (Build 48)**
 
-- 📱 **[Download Android APK (v1.4.44 • 6.0 MB)](https://hostelsplit-app.surge.sh/HostelSplit-v1.4.44.apk)**
+- 📱 **[Download Android APK (v1.4.45 • 6.0 MB)](https://hostelsplit-app.surge.sh/HostelSplit-v1.4.45.apk)**
 - 🌐 **Launch Web App (PWA)**: [https://hostelsplit.web.app](https://hostelsplit.web.app)
 - ⚡ **Mirror Web App**: [https://hostelsplit-app.surge.sh](https://hostelsplit-app.surge.sh)
 
 ---
 
-## 🆕 What's New in v1.4.44 (Build 47)
-- **Hardened Cloud Security Rules**: Participant-only expense reads, field-restricted settlement updates, and strict Google Authentication enforcement.
-- **Exact Rupee Split Math**: Equal splits now allocate integer rupee remainders to the payer so shares always sum to the exact total bill without rounding drift.
-- **Atomic Settlements & Auto-Rollback**: `Mark as Paid` and `Settle All Cash` commit in a single atomic batch with automatic rollback on network rejection.
-- **Chronological FIFO Per-Bill Status**: Partial settlements automatically mark older bills as `Settled` in chronological order.
-- **Shared-Device Privacy**: Full user-scoped local cache cleanup on logout and account deletion.
+## 🆕 What's New in v1.4.45 (Build 48)
+- **Optional 4-Digit App Lock PIN**: Protect your HostelSplit wallet on shared hostel phones with a salted SHA-256 4-digit PIN and automatic 60-second background re-lock.
+- **Anti-Self-Verification & Storage Security Rules**: Enforced server-side recipient-only verification on `settlement_paid` claims, upper amount/title bounds in `firestore.rules`, and UID-prefixed 5 MB image rules in `storage.rules`.
+- **Android WebView & Network Security Hardening**: Added `network_security_config.xml` (HTTPS-only + system CA trust anchors) and disabled WebView file/content access and release debugging in `MainActivity.java`.
+- **5-Point OTA Update Upgrade**: Added `minRequiredVersion` mandatory update enforcement, foreground resume update checks, live Web/PWA cache refresh, post-update confirmation toast, and official GitHub Releases mirror links.
+- **UI & Friend History Polish**: Removed the redundant bottom floating APK banner and added Splitwise-style per-bill share breakdowns plus a 1-tap `Settle Cash` button inside Friend History.
 
 ---
 
@@ -31,7 +31,7 @@
 ---
 
 ## 📲 How to Install on Android
-1. Download the latest **`HostelSplit-v1.4.44.apk`** from the **[Releases](https://github.com/Muhammad-Shahzaib-Aarbi/hostel-split-releases/releases)** section or the direct link above.
+1. Download the latest **`HostelSplit-v1.4.45.apk`** from the **[Releases](https://github.com/Muhammad-Shahzaib-Aarbi/hostel-split-releases/releases)** section or the direct link above.
 2. Open the downloaded `.apk` file on your Android phone.
 3. If prompted, tap **Settings ➔ Allow from this source**, then tap **Install**.
 4. Sign in with your Google account to sync your hostel room ledger!
