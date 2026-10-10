@@ -4,11 +4,20 @@
 
 ---
 
-## 🚀 Latest Release: **v1.4.43 (Build 46)**
+## 🚀 Latest Release: **v1.4.44 (Build 47)**
 
-- 📱 **[Download Android APK (v1.4.43 • 6.0 MB)](https://hostelsplit-app.surge.sh/HostelSplit-v1.4.43.apk)**
+- 📱 **[Download Android APK (v1.4.44 • 6.0 MB)](https://hostelsplit-app.surge.sh/HostelSplit-v1.4.44.apk)**
 - 🌐 **Launch Web App (PWA)**: [https://hostelsplit.web.app](https://hostelsplit.web.app)
 - ⚡ **Mirror Web App**: [https://hostelsplit-app.surge.sh](https://hostelsplit-app.surge.sh)
+
+---
+
+## 🆕 What's New in v1.4.44 (Build 47)
+- **Hardened Cloud Security Rules**: Participant-only expense reads, field-restricted settlement updates, and strict Google Authentication enforcement.
+- **Exact Rupee Split Math**: Equal splits now allocate integer rupee remainders to the payer so shares always sum to the exact total bill without rounding drift.
+- **Atomic Settlements & Auto-Rollback**: `Mark as Paid` and `Settle All Cash` commit in a single atomic batch with automatic rollback on network rejection.
+- **Chronological FIFO Per-Bill Status**: Partial settlements automatically mark older bills as `Settled` in chronological order.
+- **Shared-Device Privacy**: Full user-scoped local cache cleanup on logout and account deletion.
 
 ---
 
@@ -22,7 +31,7 @@
 ---
 
 ## 📲 How to Install on Android
-1. Download the latest **`HostelSplit-v1.4.43.apk`** from the **[Releases](https://github.com/Muhammad-Shahzaib-Aarbi/hostel-split-releases/releases)** section or the direct link above.
+1. Download the latest **`HostelSplit-v1.4.44.apk`** from the **[Releases](https://github.com/Muhammad-Shahzaib-Aarbi/hostel-split-releases/releases)** section or the direct link above.
 2. Open the downloaded `.apk` file on your Android phone.
 3. If prompted, tap **Settings ➔ Allow from this source**, then tap **Install**.
 4. Sign in with your Google account to sync your hostel room ledger!
